@@ -3,55 +3,336 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CapGen | Government Contract Opportunity Matching</title>
-  <meta name="description" content="CapGen helps small businesses turn their capability profile into a government contract opportunity pipeline." />
-  <meta name="keywords" content="government contracts, small business government contracting, NAICS code, capability statement, SDVOSB, SAM.gov opportunities, CapGen" />
+  <title>CapGen | Government Contract Opportunity Matching for Small Businesses</title>
+  <meta name="description" content="CapGen helps small businesses turn a capability profile into a government contract opportunity pipeline with NAICS clarity, matched opportunities, and pursuit planning." />
+  <meta name="keywords" content="government contracts, small business government contracting, NAICS code, capability statement, SDVOSB, SAM.gov opportunities, CapGen, contract matching tool" />
   <meta name="author" content="Apropos Group LLC" />
   <meta property="og:title" content="CapGen | Government Contract Opportunity Matching" />
-  <meta property="og:description" content="Turn your business profile into a government contract opportunity pipeline." />
+  <meta property="og:description" content="Turn your business capability profile into a government contract opportunity pipeline." />
   <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#07111f" />
   <style>
-    :root{--bg:#07111f;--bg2:#0b1628;--panel:rgba(15,30,52,.88);--text:#f6f9ff;--muted:#9db0cc;--blue:#3b82f6;--cyan:#22d3ee;--green:#34d399;--gold:#fbbf24;--border:rgba(148,163,184,.22);--shadow:0 24px 80px rgba(0,0,0,.35);--radius:22px;--max:1180px}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--text);background:radial-gradient(circle at 12% 10%,rgba(59,130,246,.24),transparent 32%),radial-gradient(circle at 88% 14%,rgba(34,211,238,.14),transparent 30%),linear-gradient(180deg,var(--bg),#030712 72%);line-height:1.6;min-height:100vh}a{color:inherit;text-decoration:none}.container{width:min(var(--max),calc(100% - 36px));margin:0 auto}.topbar{position:sticky;top:0;z-index:50;backdrop-filter:blur(18px);background:rgba(7,17,31,.82);border-bottom:1px solid var(--border)}.nav{display:flex;align-items:center;justify-content:space-between;min-height:76px;gap:22px}.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:-.03em;font-size:1.35rem}.logo-mark{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(59,130,246,.95),rgba(34,211,238,.82));box-shadow:0 0 36px rgba(59,130,246,.35);font-weight:900}.nav-links{display:flex;align-items:center;gap:22px;color:var(--muted);font-size:.95rem}.nav-links a:hover{color:var(--text)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 18px;border-radius:999px;font-weight:850;border:1px solid transparent;transition:transform .18s ease,background .18s ease;cursor:pointer;white-space:nowrap;font-size:.95rem}.btn:hover{transform:translateY(-2px)}.btn-primary{background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;box-shadow:0 16px 42px rgba(59,130,246,.34)}.btn-secondary{background:rgba(255,255,255,.06);border-color:var(--border);color:var(--text)}.hero{padding:92px 0 58px;position:relative;overflow:hidden}.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);align-items:center;gap:42px}.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:9px 13px;border:1px solid rgba(96,165,250,.32);background:rgba(59,130,246,.11);color:#bfdbfe;border-radius:999px;font-weight:750;font-size:.88rem;margin-bottom:22px}.pulse{width:9px;height:9px;background:var(--green);border-radius:50%;box-shadow:0 0 0 7px rgba(52,211,153,.12)}h1{font-size:clamp(2.85rem,6vw,5.5rem);line-height:.96;letter-spacing:-.075em;margin-bottom:24px}.gradient-text{background:linear-gradient(135deg,#fff,#bfdbfe 35%,#67e8f9 74%,#fde68a);-webkit-background-clip:text;background-clip:text;color:transparent}.hero-copy{color:var(--muted);font-size:clamp(1.05rem,1.6vw,1.28rem);max-width:680px;margin-bottom:28px}.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin:30px 0 26px}.trust-row{display:flex;flex-wrap:wrap;gap:10px;color:#cbd5e1;font-size:.92rem}.trust-pill{border:1px solid var(--border);background:rgba(255,255,255,.045);padding:8px 11px;border-radius:999px}.dashboard-card{position:relative;background:linear-gradient(180deg,rgba(15,30,52,.92),rgba(8,18,34,.92));border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}.dash-header{padding:20px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;gap:15px}.dash-title{font-weight:900;letter-spacing:-.02em}.status{color:var(--green);background:rgba(52,211,153,.1);border:1px solid rgba(52,211,153,.25);padding:6px 10px;border-radius:999px;font-size:.78rem;font-weight:850}.dash-body{padding:20px}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px}.metric{background:rgba(255,255,255,.05);border:1px solid var(--border);padding:15px;border-radius:16px}.metric span{display:block;color:var(--muted);font-size:.76rem;margin-bottom:6px}.metric strong{display:block;font-size:1.5rem;line-height:1;letter-spacing:-.04em}.opportunity-list{display:grid;gap:12px}.opp{padding:15px;border-radius:17px;border:1px solid var(--border);background:rgba(255,255,255,.046)}.opp-top{display:flex;justify-content:space-between;gap:10px;margin-bottom:8px}.opp h3{font-size:.98rem;line-height:1.3}.badge{font-size:.72rem;color:#dbeafe;background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.28);border-radius:999px;padding:4px 8px;font-weight:850;white-space:nowrap;align-self:start}.opp-meta{color:var(--muted);font-size:.82rem}section{padding:74px 0}.section-heading{max-width:760px;margin-bottom:34px}.section-heading.center{text-align:center;margin-left:auto;margin-right:auto}h2{font-size:clamp(2rem,3.4vw,3.25rem);letter-spacing:-.055em;line-height:1.05;margin-bottom:16px}.section-heading p{color:var(--muted);font-size:1.05rem}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:24px;background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);box-shadow:0 16px 52px rgba(0,0,0,.2)}.icon{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:rgba(59,130,246,.14);border:1px solid rgba(59,130,246,.24);color:#bfdbfe;font-weight:900;margin-bottom:16px}.card h3{font-size:1.13rem;margin-bottom:9px;letter-spacing:-.02em}.card p{color:var(--muted);font-size:.96rem}.steps{display:grid;gap:14px;counter-reset:step}.step{display:grid;grid-template-columns:58px 1fr;gap:16px;padding:20px;background:rgba(255,255,255,.046);border:1px solid var(--border);border-radius:20px;align-items:start}.step::before{counter-increment:step;content:counter(step);width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;font-weight:900}.step h3{margin-bottom:4px}.step p{color:var(--muted)}.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:start}.tag-grid{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.tag{padding:9px 12px;border-radius:999px;background:rgba(255,255,255,.055);border:1px solid var(--border);color:#dbeafe;font-weight:750;font-size:.9rem}.form-wrap{background:linear-gradient(180deg,rgba(15,30,52,.94),rgba(8,18,34,.94));border:1px solid var(--border);border-radius:28px;box-shadow:var(--shadow);padding:28px}form{display:grid;gap:14px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{display:grid;gap:7px;color:#dbeafe;font-weight:750;font-size:.88rem}input,select,textarea{width:100%;border:1px solid var(--border);background:rgba(2,6,23,.58);color:var(--text);border-radius:14px;padding:13px 14px;font:inherit;outline:none}input:focus,select:focus,textarea:focus{border-color:rgba(96,165,250,.75);box-shadow:0 0 0 4px rgba(59,130,246,.13)}textarea{min-height:112px;resize:vertical}.consent{grid-template-columns:auto 1fr;align-items:start;gap:10px;color:var(--muted);font-weight:500;font-size:.9rem}.consent input{width:auto;margin-top:4px}.full{grid-column:1/-1}.form-note{color:var(--muted);font-size:.86rem}.faq{display:grid;gap:12px;max-width:860px;margin:0 auto}details{background:rgba(255,255,255,.046);border:1px solid var(--border);border-radius:18px;padding:18px 20px}summary{cursor:pointer;font-weight:850;color:#eef6ff}details p{color:var(--muted);margin-top:10px}.cta-band{padding:42px;border-radius:30px;border:1px solid rgba(96,165,250,.28);background:radial-gradient(circle at 10% 20%,rgba(59,130,246,.3),transparent 28%),linear-gradient(135deg,rgba(15,30,52,.95),rgba(7,17,31,.95));box-shadow:var(--shadow);display:flex;align-items:center;justify-content:space-between;gap:22px}.cta-band h2{margin:0 0 10px}.cta-band p{color:var(--muted)}footer{border-top:1px solid var(--border);padding:30px 0;color:var(--muted);font-size:.9rem}.footer-row{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap}@media(max-width:920px){.hero-grid,.split{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.nav-links{display:none}.hero{padding-top:58px}.dashboard-card{max-width:680px}}@media(max-width:620px){.form-grid,.metrics{grid-template-columns:1fr}.cta-band{padding:28px;align-items:flex-start;flex-direction:column}.btn{width:100%}.hero-actions{width:100%}h1{font-size:2.75rem}}
+    :root {
+      --bg: #050b16;
+      --bg2: #071426;
+      --panel: rgba(15, 30, 52, 0.88);
+      --panel2: rgba(9, 20, 37, 0.94);
+      --text: #f7fbff;
+      --muted: #a9bbd4;
+      --soft: #dbeafe;
+      --blue: #3b82f6;
+      --cyan: #22d3ee;
+      --green: #34d399;
+      --gold: #fbbf24;
+      --red: #fb7185;
+      --border: rgba(148, 163, 184, 0.22);
+      --shadow: 0 28px 90px rgba(0, 0, 0, 0.38);
+      --radius: 24px;
+      --max: 1180px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      min-height: 100vh;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 8%, rgba(59, 130, 246, 0.28), transparent 31%),
+        radial-gradient(circle at 85% 12%, rgba(34, 211, 238, 0.14), transparent 28%),
+        radial-gradient(circle at 65% 100%, rgba(251, 191, 36, 0.08), transparent 30%),
+        linear-gradient(180deg, var(--bg), #020617 78%);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(var(--max), calc(100% - 36px)); margin: 0 auto; }
+    .topbar {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(18px);
+      background: rgba(5, 11, 22, 0.84);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 900; font-size: 1.28rem; letter-spacing: -0.03em; }
+    .logo-mark {
+      width: 42px; height: 42px; display: grid; place-items: center;
+      border-radius: 14px; font-weight: 950;
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      box-shadow: 0 0 36px rgba(59, 130, 246, 0.35);
+    }
+    .nav-links { display: flex; align-items: center; gap: 22px; color: var(--muted); font-size: 0.94rem; }
+    .nav-links a:hover { color: var(--text); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+      padding: 13px 18px; border-radius: 999px; border: 1px solid transparent;
+      font-weight: 850; cursor: pointer; white-space: nowrap;
+      transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+      font-size: 0.95rem;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: linear-gradient(135deg, var(--blue), var(--cyan)); color: white; box-shadow: 0 18px 46px rgba(59,130,246,.32); }
+    .btn-secondary { background: rgba(255,255,255,.055); border-color: var(--border); color: var(--text); }
+    .hero { padding: 86px 0 60px; overflow: hidden; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.04fr) minmax(330px, 0.96fr); gap: 42px; align-items: center; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 9px;
+      padding: 9px 13px; border-radius: 999px;
+      color: #bfdbfe; background: rgba(59, 130, 246, 0.11); border: 1px solid rgba(96, 165, 250, 0.32);
+      font-size: .88rem; font-weight: 800; margin-bottom: 22px;
+    }
+    .pulse { width: 9px; height: 9px; border-radius: 999px; background: var(--green); box-shadow: 0 0 0 7px rgba(52,211,153,.12); }
+    h1 { font-size: clamp(2.75rem, 6vw, 5.45rem); line-height: .96; letter-spacing: -0.075em; margin-bottom: 24px; }
+    .gradient-text { background: linear-gradient(135deg, #fff, #bfdbfe 38%, #67e8f9 73%, #fde68a); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .hero-copy { color: var(--muted); font-size: clamp(1.05rem, 1.6vw, 1.28rem); max-width: 690px; }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin: 30px 0 24px; }
+    .trust-row { display: flex; flex-wrap: wrap; gap: 10px; color: var(--soft); font-size: .92rem; }
+    .trust-pill { padding: 8px 11px; border-radius: 999px; border: 1px solid var(--border); background: rgba(255,255,255,.045); }
+    .intel-card {
+      background: linear-gradient(180deg, rgba(15,30,52,.94), rgba(7,17,31,.96));
+      border: 1px solid var(--border); border-radius: 28px; box-shadow: var(--shadow); overflow: hidden;
+    }
+    .intel-header { padding: 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+    .intel-title { font-weight: 900; letter-spacing: -0.02em; }
+    .status { color: var(--green); background: rgba(52,211,153,.1); border: 1px solid rgba(52,211,153,.25); padding: 6px 10px; border-radius: 999px; font-size: .78rem; font-weight: 850; }
+    .intel-body { padding: 20px; }
+    .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 16px; }
+    .metric { background: rgba(255,255,255,.05); border: 1px solid var(--border); border-radius: 18px; padding: 16px; }
+    .metric span { display: block; color: var(--muted); font-size: .75rem; margin-bottom: 7px; text-transform: uppercase; letter-spacing: .08em; }
+    .metric strong { display: block; font-size: 1.55rem; line-height: 1; letter-spacing: -0.04em; }
+    .opps { display: grid; gap: 12px; }
+    .opp { padding: 15px; border: 1px solid var(--border); border-radius: 18px; background: rgba(255,255,255,.046); }
+    .opp-top { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 7px; }
+    .opp h3 { font-size: .98rem; line-height: 1.3; }
+    .badge { align-self: flex-start; font-size: .72rem; font-weight: 850; color: #dbeafe; background: rgba(59,130,246,.15); border: 1px solid rgba(59,130,246,.28); border-radius: 999px; padding: 4px 8px; white-space: nowrap; }
+    .opp p { color: var(--muted); font-size: .84rem; }
+    section { padding: 74px 0; }
+    .section-heading { max-width: 790px; margin-bottom: 34px; }
+    .section-heading.center { margin-left: auto; margin-right: auto; text-align: center; }
+    h2 { font-size: clamp(2rem, 3.4vw, 3.25rem); line-height: 1.05; letter-spacing: -0.055em; margin-bottom: 16px; }
+    .section-heading p { color: var(--muted); font-size: 1.05rem; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; box-shadow: 0 16px 52px rgba(0,0,0,.2); }
+    .icon { width: 44px; height: 44px; border-radius: 15px; display: grid; place-items: center; margin-bottom: 15px; background: rgba(59,130,246,.14); border: 1px solid rgba(59,130,246,.24); color: #bfdbfe; font-weight: 950; }
+    .card h3 { font-size: 1.14rem; letter-spacing: -0.02em; margin-bottom: 9px; }
+    .card p, .card li { color: var(--muted); font-size: .96rem; }
+    .card ul { padding-left: 18px; display: grid; gap: 8px; }
+    .split { display: grid; grid-template-columns: .9fr 1.1fr; gap: 30px; align-items: start; }
+    .steps { display: grid; gap: 14px; counter-reset: step; }
+    .step { display: grid; grid-template-columns: 58px 1fr; gap: 16px; align-items: start; padding: 20px; background: rgba(255,255,255,.046); border: 1px solid var(--border); border-radius: 20px; }
+    .step::before { counter-increment: step; content: counter(step); width: 42px; height: 42px; border-radius: 14px; display: grid; place-items: center; background: linear-gradient(135deg, var(--blue), var(--cyan)); font-weight: 950; }
+    .step h3 { margin-bottom: 4px; }
+    .step p { color: var(--muted); }
+    .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+    .tag { border: 1px solid var(--border); background: rgba(255,255,255,.055); color: var(--soft); border-radius: 999px; padding: 9px 12px; font-weight: 800; font-size: .9rem; }
+    .form-wrap { background: linear-gradient(180deg, rgba(15,30,52,.94), rgba(8,18,34,.96)); border: 1px solid var(--border); border-radius: 28px; box-shadow: var(--shadow); padding: 28px; }
+    form { display: grid; gap: 14px; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    label { display: grid; gap: 7px; color: #dbeafe; font-weight: 800; font-size: .88rem; }
+    input, select, textarea { width: 100%; border: 1px solid var(--border); background: rgba(2,6,23,.62); color: var(--text); border-radius: 14px; padding: 13px 14px; font: inherit; outline: none; }
+    input:focus, select:focus, textarea:focus { border-color: rgba(96,165,250,.78); box-shadow: 0 0 0 4px rgba(59,130,246,.13); }
+    textarea { min-height: 112px; resize: vertical; }
+    .full { grid-column: 1 / -1; }
+    .consent { grid-template-columns: auto 1fr; gap: 10px; color: var(--muted); font-weight: 550; align-items: start; }
+    .consent input { width: auto; margin-top: 4px; }
+    .form-note { color: var(--muted); font-size: .86rem; }
+    .faq { display: grid; gap: 12px; max-width: 900px; margin: 0 auto; }
+    details { background: rgba(255,255,255,.046); border: 1px solid var(--border); border-radius: 18px; padding: 18px 20px; }
+    summary { cursor: pointer; font-weight: 900; color: #eef6ff; }
+    details p { color: var(--muted); margin-top: 10px; }
+    .disclaimer { border: 1px solid rgba(251,191,36,.24); background: rgba(251,191,36,.07); border-radius: 22px; padding: 20px; color: #fde68a; }
+    .cta-band { display: flex; align-items: center; justify-content: space-between; gap: 22px; padding: 42px; border-radius: 30px; border: 1px solid rgba(96,165,250,.28); background: radial-gradient(circle at 10% 20%, rgba(59,130,246,.3), transparent 28%), linear-gradient(135deg, rgba(15,30,52,.95), rgba(7,17,31,.95)); box-shadow: var(--shadow); }
+    .cta-band h2 { margin-bottom: 10px; }
+    .cta-band p { color: var(--muted); }
+    footer { border-top: 1px solid var(--border); padding: 32px 0; color: var(--muted); font-size: .9rem; }
+    .footer-row { display: flex; justify-content: space-between; gap: 22px; flex-wrap: wrap; }
+    .footer-links { display: flex; gap: 16px; flex-wrap: wrap; }
+    .footer-links a { color: #bfdbfe; }
+    @media (max-width: 920px) { .hero-grid, .split { grid-template-columns: 1fr; } .cards { grid-template-columns: 1fr; } .nav-links { display: none; } .hero { padding-top: 58px; } .intel-card { max-width: 720px; } }
+    @media (max-width: 640px) { .container { width: min(var(--max), calc(100% - 24px)); } .form-grid, .metrics { grid-template-columns: 1fr; } .cta-band { flex-direction: column; align-items: flex-start; padding: 28px; } .btn { width: 100%; } .hero-actions { width: 100%; } h1 { font-size: 2.65rem; } section { padding: 54px 0; } .form-wrap { padding: 20px; } }
   </style>
 </head>
 <body>
   <header class="topbar">
     <nav class="container nav" aria-label="Main navigation">
       <a href="#top" class="brand" aria-label="CapGen home"><span class="logo-mark">CG</span><span>CapGen</span></a>
-      <div class="nav-links"><a href="#how">How It Works</a><a href="#who">Who It Helps</a><a href="#faq">FAQ</a><a class="btn btn-primary" href="#early-access">Request Early Access</a></div>
+      <div class="nav-links">
+        <a href="#how">How It Works</a>
+        <a href="#who">Who It Helps</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-primary" href="#early-access">Request Early Access</a>
+      </div>
     </nav>
   </header>
+
   <main id="top">
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <div class="eyebrow"><span class="pulse"></span> Early access opening soon</div>
+          <div class="eyebrow"><span class="pulse"></span> Early tester access is open</div>
           <h1><span class="gradient-text">Turn your business profile into a government contract opportunity pipeline.</span></h1>
           <p class="hero-copy">CapGen helps small businesses identify government opportunities that may match their capabilities, NAICS codes, business profile, and pursuit readiness.</p>
-          <div class="hero-actions"><a class="btn btn-primary" href="#early-access">Request Early Access</a><a class="btn btn-secondary" href="#how">See How It Works</a></div>
-          <div class="trust-row"><span class="trust-pill">NAICS clarity</span><span class="trust-pill">Opportunity matching</span><span class="trust-pill">Bid/no-bid direction</span></div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#early-access">Request Early Access</a>
+            <a class="btn btn-secondary" href="#how">See How It Works</a>
+          </div>
+          <div class="trust-row">
+            <span class="trust-pill">NAICS clarity</span>
+            <span class="trust-pill">Opportunity matching</span>
+            <span class="trust-pill">Bid/no-bid direction</span>
+            <span class="trust-pill">Small business focused</span>
+          </div>
         </div>
-        <div class="dashboard-card" aria-label="CapGen dashboard preview">
-          <div class="dash-header"><div><div class="dash-title">Government Intelligence Preview</div><small style="color:var(--muted)">Capability profile → matched opportunities</small></div><span class="status">Pipeline Active</span></div>
-          <div class="dash-body">
-            <div class="metrics"><div class="metric"><span>Primary NAICS</span><strong>541512</strong></div><div class="metric"><span>Monitored Codes</span><strong>6</strong></div><div class="metric"><span>Matched Leads</span><strong>138</strong></div></div>
-            <div class="opportunity-list">
-              <article class="opp"><div class="opp-top"><h3>IT Support Services Opportunity</h3><span class="badge">Review Fit</span></div><p class="opp-meta">Agency match • NAICS aligned • Deadline window identified</p></article>
-              <article class="opp"><div class="opp-top"><h3>Administrative Support Contract</h3><span class="badge">Analyze</span></div><p class="opp-meta">Set-aside review • Staffing requirements • Pursuit checklist</p></article>
-              <article class="opp"><div class="opp-top"><h3>Small Business Services RFQ</h3><span class="badge">Watchlist</span></div><p class="opp-meta">Capability match • Due date bucket • Next action</p></article>
+
+        <aside class="intel-card" aria-label="CapGen dashboard preview">
+          <div class="intel-header">
+            <div><div class="intel-title">Government Intelligence Preview</div><small style="color:var(--muted)">Capability profile → matched opportunities</small></div>
+            <span class="status">Pipeline Active</span>
+          </div>
+          <div class="intel-body">
+            <div class="metrics">
+              <div class="metric"><span>Primary NAICS</span><strong>541512</strong></div>
+              <div class="metric"><span>Monitored</span><strong>6</strong></div>
+              <div class="metric"><span>Matches</span><strong>138</strong></div>
+            </div>
+            <div class="opps">
+              <article class="opp"><div class="opp-top"><h3>IT Support Services Opportunity</h3><span class="badge">Review Fit</span></div><p>Agency match • NAICS aligned • Deadline window identified</p></article>
+              <article class="opp"><div class="opp-top"><h3>Administrative Support Contract</h3><span class="badge">Analyze</span></div><p>Set-aside review • Staffing requirements • Pursuit checklist</p></article>
+              <article class="opp"><div class="opp-top"><h3>Small Business Services RFQ</h3><span class="badge">Watchlist</span></div><p>Capability match • Due date bucket • Recommended next action</p></article>
             </div>
           </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="problem">
+      <div class="container">
+        <div class="section-heading center">
+          <h2>Most small businesses are not short on ability. They are short on direction.</h2>
+          <p>Government opportunities are available every day, but business owners often waste time searching the wrong keywords, watching the wrong NAICS codes, or chasing contracts that do not fit their capacity.</p>
+        </div>
+        <div class="cards">
+          <div class="card"><div class="icon">01</div><h3>Too many listings</h3><p>CapGen is designed to reduce noise by connecting opportunity review to the business profile first.</p></div>
+          <div class="card"><div class="icon">02</div><h3>NAICS confusion</h3><p>Industry codes matter. CapGen helps organize the service categories government buyers use to classify work.</p></div>
+          <div class="card"><div class="icon">03</div><h3>No pursuit filter</h3><p>Finding an opportunity is not enough. The better question is whether the business should pursue it.</p></div>
         </div>
       </div>
     </section>
-    <section id="problem"><div class="container"><div class="section-heading center"><h2>Most small businesses are not short on ability. They are short on direction.</h2><p>Government opportunities are available, but finding the ones that fit your actual business can be confusing. CapGen is being built to reduce the guessing.</p></div><div class="cards"><div class="card"><div class="icon">01</div><h3>Too many listings</h3><p>Business owners waste time reviewing opportunities that do not match their services, certifications, or capacity.</p></div><div class="card"><div class="icon">02</div><h3>NAICS confusion</h3><p>The right industry codes matter. CapGen helps connect a business profile to relevant NAICS categories.</p></div><div class="card"><div class="icon">03</div><h3>No bid/no-bid filter</h3><p>Finding a contract is only the first step. The bigger question is whether it is worth pursuing.</p></div></div></div></section>
-    <section id="how"><div class="container split"><div class="section-heading"><h2>How CapGen works</h2><p>CapGen is designed to guide small businesses from basic capability information to a more focused opportunity pipeline.</p><div class="tag-grid"><span class="tag">Capability profile</span><span class="tag">NAICS monitoring</span><span class="tag">Opportunity review</span><span class="tag">Pursuit planning</span></div></div><div class="steps"><div class="step"><div><h3>Build your business capability profile</h3><p>Capture what your business does, who you serve, and what services you can deliver.</p></div></div><div class="step"><div><h3>Identify relevant NAICS codes</h3><p>Connect your services to the industry codes government buyers use to classify opportunities.</p></div></div><div class="step"><div><h3>Review matched opportunities</h3><p>See opportunities that may align with your business profile, certifications, and service areas.</p></div></div><div class="step"><div><h3>Analyze whether to pursue</h3><p>Evaluate eligibility, staffing, deadline risk, past performance needs, and next steps.</p></div></div><div class="step"><div><h3>Prepare for the next action</h3><p>Create a better pursuit checklist before spending time on the wrong opportunity.</p></div></div></div></div></section>
-    <section id="who"><div class="container"><div class="section-heading center"><h2>Built for small businesses pursuing government opportunities</h2><p>CapGen is especially useful for business owners who need a clearer path into government contracting.</p></div><div class="cards"><div class="card"><div class="icon">SB</div><h3>Small businesses</h3><p>Find a better starting point for government opportunity research and pursuit planning.</p></div><div class="card"><div class="icon">VA</div><h3>Veteran-owned / SDVOSB</h3><p>Review opportunities where certification status and set-aside fit may matter.</p></div><div class="card"><div class="icon">IT</div><h3>Service providers</h3><p>Useful for IT, consulting, call centers, professional services, administrative support, and local service firms.</p></div></div></div></section>
-    <section id="early-access"><div class="container split"><div class="section-heading"><div class="eyebrow"><span class="pulse"></span> Join the early tester group</div><h2>Request early access to CapGen</h2><p>Submit your information to be considered for an early CapGen match preview. This temporary landing page uses Netlify Forms for simple lead capture.</p><div class="tag-grid"><span class="tag">Free match preview</span><span class="tag">Early tester access</span><span class="tag">Small business focused</span></div></div><div class="form-wrap"><form name="capgen-early-access" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html"><input type="hidden" name="form-name" value="capgen-early-access" /><p style="display:none"><label>Do not fill this out: <input name="bot-field" /></label></p><div class="form-grid"><label>First name<input type="text" name="first_name" autocomplete="given-name" required /></label><label>Last name<input type="text" name="last_name" autocomplete="family-name" required /></label><label>Business name<input type="text" name="business_name" autocomplete="organization" required /></label><label>Email<input type="email" name="email" autocomplete="email" required /></label><label>Phone<input type="tel" name="phone" autocomplete="tel" /></label><label>Website<input type="url" name="website" placeholder="https://example.com" /></label><label>City<input type="text" name="city" autocomplete="address-level2" /></label><label>State<input type="text" name="state" autocomplete="address-level1" /></label><label class="full">Primary service<input type="text" name="primary_service" placeholder="Example: IT support, call center, consulting, facilities, admin support" required /></label><label>Registered in SAM.gov?<select name="sam_registered" required><option value="">Select one</option><option>Yes</option><option>No</option><option>Not sure</option></select></label><label>Do you know your NAICS code?<select name="knows_naics" required><option value="">Select one</option><option>Yes</option><option>No</option><option>Not sure</option></select></label><label class="full">Certification type<select name="certification_type" required><option value="">Select one</option><option>Small Business</option><option>SDVOSB</option><option>VOSB</option><option>WOSB</option><option>8(a)</option><option>HUBZone</option><option>Minority-Owned</option><option>Not sure</option><option>Other</option></select></label><label class="full">What kind of government opportunities are you looking for?<textarea name="opportunity_interest" placeholder="Tell us what type of contracts you want to find."></textarea></label><label class="consent full"><input type="checkbox" name="consent" required /><span>I agree that Apropos Group LLC may contact me about CapGen early access and related government contracting tools.</span></label></div><button class="btn btn-primary" type="submit">Submit Early Access Request</button><p class="form-note">No guarantees of awards, eligibility, or contract success are made. CapGen helps identify opportunities that may match business information provided.</p></form></div></div></section>
-    <section id="faq"><div class="container"><div class="section-heading center"><h2>Frequently asked questions</h2><p>Quick answers for business owners reviewing CapGen early access.</p></div><div class="faq"><details><summary>Is CapGen a government agency?</summary><p>No. CapGen is a private business tool from Apropos Group LLC. It is designed to help businesses organize and review government opportunity information.</p></details><details><summary>Does CapGen guarantee government contracts?</summary><p>No. CapGen does not guarantee awards, eligibility, or contract success. It helps identify opportunities that may match your business profile and supports better pursuit planning.</p></details><details><summary>What is a NAICS code?</summary><p>NAICS stands for North American Industry Classification System. Government buyers use NAICS codes to classify the type of work or service in an opportunity.</p></details><details><summary>Who should request early access?</summary><p>Small businesses, veteran-owned businesses, SDVOSB firms, service providers, consultants, IT companies, call centers, administrative support firms, and vendors exploring government contracting.</p></details></div></div></section>
-    <section><div class="container"><div class="cta-band"><div><h2>Ready to find a better starting point?</h2><p>Join the early access list and request a CapGen match preview.</p></div><a class="btn btn-primary" href="#early-access">Request Early Access</a></div></div></section>
+
+    <section id="how">
+      <div class="container split">
+        <div class="section-heading">
+          <div class="eyebrow"><span class="pulse"></span> The CapGen path</div>
+          <h2>From capability profile to focused opportunity review.</h2>
+          <p>CapGen is being built to help small businesses move from scattered government searches to a more organized pipeline of opportunities that may fit.</p>
+          <div class="tags"><span class="tag">Capability profile</span><span class="tag">NAICS monitoring</span><span class="tag">Opportunity review</span><span class="tag">Pursuit planning</span></div>
+        </div>
+        <div class="steps">
+          <div class="step"><div><h3>Build your business capability profile</h3><p>Capture what your business does, who you serve, and what services you can deliver.</p></div></div>
+          <div class="step"><div><h3>Identify relevant NAICS codes</h3><p>Connect your services to the industry codes government buyers use to classify opportunities.</p></div></div>
+          <div class="step"><div><h3>Review matched opportunities</h3><p>See opportunities that may align with your business profile, certifications, and service areas.</p></div></div>
+          <div class="step"><div><h3>Analyze whether to pursue</h3><p>Evaluate eligibility, staffing needs, deadline risk, past performance, and next steps.</p></div></div>
+          <div class="step"><div><h3>Prepare for action</h3><p>Create a cleaner pursuit checklist before spending time on the wrong opportunity.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="who">
+      <div class="container">
+        <div class="section-heading center">
+          <h2>Built for businesses that want a clearer path into government contracting.</h2>
+          <p>CapGen is especially useful for owners who need help translating their business capability into a practical opportunity search strategy.</p>
+        </div>
+        <div class="cards">
+          <div class="card"><div class="icon">SB</div><h3>Small businesses</h3><p>Find a better starting point for government opportunity research and pursuit planning.</p></div>
+          <div class="card"><div class="icon">VA</div><h3>Veteran-owned / SDVOSB</h3><p>Review opportunities where certification status and set-aside fit may matter.</p></div>
+          <div class="card"><div class="icon">IT</div><h3>Service providers</h3><p>Useful for IT, consulting, call centers, professional services, administrative support, facilities, and local service firms.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container split">
+        <div class="card">
+          <div class="icon">✓</div>
+          <h3>What CapGen helps you understand</h3>
+          <ul>
+            <li>Which government opportunities may match your services</li>
+            <li>Which NAICS codes may matter for your business profile</li>
+            <li>Whether a set-aside or certification requirement may affect eligibility</li>
+            <li>Whether the deadline gives you enough time to respond</li>
+            <li>What next steps may be needed before pursuing a contract</li>
+          </ul>
+        </div>
+        <div class="disclaimer">
+          <strong>Important:</strong> CapGen is not a government agency and does not guarantee contract awards, eligibility, certification approval, or bid success. CapGen helps identify opportunities that may match business information provided and supports better review and planning.
+        </div>
+      </div>
+    </section>
+
+    <section id="early-access">
+      <div class="container split">
+        <div class="section-heading">
+          <div class="eyebrow"><span class="pulse"></span> Join the early tester group</div>
+          <h2>Request early access to CapGen</h2>
+          <p>Submit your information to be considered for an early CapGen match preview. Tell us what your business does and what kind of government opportunities you want to find.</p>
+          <div class="tags"><span class="tag">Free match preview</span><span class="tag">Early tester access</span><span class="tag">Small business focused</span></div>
+        </div>
+
+        <div class="form-wrap">
+          <form name="capgen-early-access" method="POST" data-netlify="true" netlify netlify-honeypot="bot-field" action="/thank-you.html">
+            <input type="hidden" name="form-name" value="capgen-early-access" />
+            <p style="display:none"><label>Do not fill this out: <input name="bot-field" /></label></p>
+            <div class="form-grid">
+              <label>First name<input type="text" name="first_name" autocomplete="given-name" required /></label>
+              <label>Last name<input type="text" name="last_name" autocomplete="family-name" required /></label>
+              <label>Business name<input type="text" name="business_name" autocomplete="organization" required /></label>
+              <label>Email<input type="email" name="email" autocomplete="email" required /></label>
+              <label>Phone<input type="tel" name="phone" autocomplete="tel" /></label>
+              <label>Website<input type="url" name="website" placeholder="https://example.com" /></label>
+              <label>City<input type="text" name="city" autocomplete="address-level2" /></label>
+              <label>State<input type="text" name="state" autocomplete="address-level1" /></label>
+              <label class="full">Primary service<input type="text" name="primary_service" placeholder="Example: IT support, call center, consulting, facilities, admin support" required /></label>
+              <label>Registered in SAM.gov?<select name="sam_registered" required><option value="">Select one</option><option>Yes</option><option>No</option><option>Not sure</option></select></label>
+              <label>Do you know your NAICS code?<select name="knows_naics" required><option value="">Select one</option><option>Yes</option><option>No</option><option>Not sure</option></select></label>
+              <label class="full">Certification type<select name="certification_type" required><option value="">Select one</option><option>Small Business</option><option>SDVOSB</option><option>VOSB</option><option>WOSB</option><option>8(a)</option><option>HUBZone</option><option>Minority-Owned</option><option>Not sure</option><option>Other</option></select></label>
+              <label class="full">What kind of government opportunities are you looking for?<textarea name="opportunity_interest" placeholder="Tell us what type of contracts you want to find."></textarea></label>
+              <label class="consent full"><input type="checkbox" name="consent" required /><span>I agree that Apropos Group LLC may contact me about CapGen early access and related government contracting tools.</span></label>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit Early Access Request</button>
+            <p class="form-note">Your information will be used to contact you about CapGen early access. No contract award or eligibility guarantee is made.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-heading center"><h2>Frequently asked questions</h2><p>Quick answers for business owners reviewing CapGen early access.</p></div>
+        <div class="faq">
+          <details><summary>Is CapGen a government agency?</summary><p>No. CapGen is a private business tool from Apropos Group LLC. It is designed to help businesses organize and review government opportunity information.</p></details>
+          <details><summary>Does CapGen guarantee government contracts?</summary><p>No. CapGen does not guarantee awards, eligibility, certification approval, or contract success. It helps identify opportunities that may match your business profile and supports better pursuit planning.</p></details>
+          <details><summary>What is a NAICS code?</summary><p>NAICS stands for North American Industry Classification System. Government buyers use NAICS codes to classify the type of work or service in an opportunity.</p></details>
+          <details><summary>Who should request early access?</summary><p>Small businesses, veteran-owned businesses, SDVOSB firms, service providers, consultants, IT companies, call centers, administrative support firms, and vendors exploring government contracting.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta-band">
+          <div><h2>Ready to find a better starting point?</h2><p>Join the early access list and request a CapGen match preview.</p></div>
+          <a class="btn btn-primary" href="#early-access">Request Early Access</a>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer><div class="container footer-row"><div>© <span id="year"></span> CapGen by Apropos Group LLC. All rights reserved.</div><div>Government opportunity matching • NAICS clarity • Small business pursuit planning</div></div></footer>
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+
+  <footer>
+    <div class="container footer-row">
+      <div>© <span id="year"></span> CapGen by Apropos Group LLC. All rights reserved.</div>
+      <div class="footer-links"><a href="#early-access">Early Access</a><a href="#faq">FAQ</a><a href="/privacy.html">Privacy Notice</a></div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
