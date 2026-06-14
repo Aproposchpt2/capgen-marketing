@@ -19,29 +19,22 @@
     <input type="text" name="city" />
     <input type="text" name="state" />
     <input type="text" name="primary_service" />
-    <select name="sam_registered">
-      <option>Yes</option>
-      <option>No</option>
-      <option>Not sure</option>
-    </select>
-    <select name="knows_naics">
-      <option>Yes</option>
-      <option>No</option>
-      <option>Not sure</option>
-    </select>
-    <select name="certification_type">
-      <option>Small Business</option>
-      <option>SDVOSB</option>
-      <option>VOSB</option>
-      <option>WOSB</option>
-      <option>8(a)</option>
-      <option>HUBZone</option>
-      <option>Minority-Owned</option>
-      <option>Not sure</option>
-      <option>Other</option>
-    </select>
+    <select name="sam_registered"><option>Yes</option><option>No</option><option>Not sure</option></select>
+    <select name="knows_naics"><option>Yes</option><option>No</option><option>Not sure</option></select>
+    <select name="certification_type"><option>Small Business</option><option>SDVOSB</option><option>VOSB</option><option>WOSB</option><option>8(a)</option><option>HUBZone</option><option>Minority-Owned</option><option>Not sure</option><option>Other</option></select>
     <textarea name="opportunity_interest"></textarea>
     <input type="checkbox" name="consent" />
+    <button type="submit">Submit</button>
+  </form>
+
+  <form name="capgen-contact" method="POST" netlify data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" hidden>
+    <input type="hidden" name="form-name" value="capgen-contact" />
+    <input name="bot-field" />
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="text" name="business_name" />
+    <select name="reason"><option>Early access question</option><option>Match preview interest</option><option>Partnership inquiry</option><option>Website issue</option><option>Other</option></select>
+    <textarea name="message"></textarea>
     <button type="submit">Submit</button>
   </form>
 </body>
