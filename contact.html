@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact CapGen | Early Access and Match Preview</title>
+  <meta name="description" content="Contact CapGen by Apropos Group LLC about early access, government contract opportunity matching, and small business pursuit planning." />
+  <style>
+    :root{--bg:#050b16;--panel:rgba(15,30,52,.92);--text:#f8fafc;--muted:#a9bbd4;--blue:#3b82f6;--cyan:#22d3ee;--border:rgba(148,163,184,.22);--max:980px}*{box-sizing:border-box;margin:0;padding:0}body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:radial-gradient(circle at 14% 8%,rgba(59,130,246,.25),transparent 32%),linear-gradient(180deg,var(--bg),#020617);color:var(--text);line-height:1.75;min-height:100vh}.wrap{width:min(var(--max),calc(100% - 36px));margin:auto;padding:40px 0 76px}.brand{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:900;margin-bottom:36px}.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center}.grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:24px;align-items:start}.card,.formbox{background:var(--panel);border:1px solid var(--border);border-radius:30px;padding:30px;box-shadow:0 24px 80px rgba(0,0,0,.34)}h1{font-size:clamp(2.35rem,5vw,4.3rem);letter-spacing:-.065em;line-height:1;margin-bottom:18px}h2{font-size:1.35rem;margin:26px 0 10px}p,li{color:var(--muted)}ul{padding-left:22px;display:grid;gap:8px;margin-top:10px}form{display:grid;gap:14px}label{display:grid;gap:7px;color:#dbeafe;font-weight:800;font-size:.9rem}input,select,textarea{width:100%;border:1px solid var(--border);background:rgba(2,6,23,.62);color:var(--text);border-radius:14px;padding:13px 14px;font:inherit;outline:none}textarea{min-height:130px;resize:vertical}.btn{border:0;display:inline-flex;justify-content:center;padding:13px 18px;border-radius:999px;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;text-decoration:none;font-weight:850;cursor:pointer}.links{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px}.links a{color:#bfdbfe;text-decoration:none;font-weight:850}.note{margin-top:18px;color:var(--muted);font-size:.9rem}@media(max-width:760px){.grid{grid-template-columns:1fr}.card,.formbox{padding:24px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <a class="brand" href="/"><span class="logo">CG</span><span>CapGen</span></a>
+    <div class="grid">
+      <section class="card">
+        <h1>Contact CapGen</h1>
+        <p>Use this page to contact Apropos Group LLC about CapGen early access, match preview interest, or general questions about the public marketing site.</p>
+        <h2>Best next step</h2>
+        <p>If you want to be considered for the CapGen early tester group, the fastest path is still the early access form on the homepage.</p>
+        <a class="btn" href="/#early-access">Request Early Access</a>
+        <h2>Helpful links</h2>
+        <div class="links"><a href="/founder-story.html">Founder Story</a><a href="/about-capgen.html">About CapGen</a><a href="/guides/">Guides</a><a href="/privacy.html">Privacy Notice</a></div>
+      </section>
+      <section class="formbox">
+        <h2>Send a message</h2>
+        <form name="capgen-contact" method="POST" data-netlify="true" netlify netlify-honeypot="bot-field" action="/thank-you.html">
+          <input type="hidden" name="form-name" value="capgen-contact" />
+          <p style="display:none"><label>Do not fill this out: <input name="bot-field" /></label></p>
+          <label>Name<input type="text" name="name" required /></label>
+          <label>Email<input type="email" name="email" required /></label>
+          <label>Business name<input type="text" name="business_name" /></label>
+          <label>Reason for contact<select name="reason" required><option value="">Select one</option><option>Early access question</option><option>Match preview interest</option><option>Partnership inquiry</option><option>Website issue</option><option>Other</option></select></label>
+          <label>Message<textarea name="message" required></textarea></label>
+          <button class="btn" type="submit">Send Message</button>
+          <p class="note">Submitting this form does not create a contract, guarantee eligibility, or guarantee government contract results.</p>
+        </form>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
