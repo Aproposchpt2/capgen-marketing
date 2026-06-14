@@ -5,19 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Founder Story | CapGen by Apropos Group LLC</title>
   <meta name="description" content="The founder story behind CapGen, a government contract opportunity matching and pursuit planning tool for small businesses." />
+  <meta name="theme-color" content="#0F2A6A" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;1,6..96,400;1,6..96,500&family=Cormorant:ital,wght@0,500;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#050b16;--panel:rgba(15,30,52,.92);--text:#f8fafc;--muted:#a9bbd4;--blue:#3b82f6;--cyan:#22d3ee;--border:rgba(148,163,184,.22);--gold:#fbbf24;--max:940px}*{box-sizing:border-box;margin:0;padding:0}body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:radial-gradient(circle at 14% 8%,rgba(59,130,246,.25),transparent 32%),radial-gradient(circle at 86% 16%,rgba(34,211,238,.12),transparent 28%),linear-gradient(180deg,var(--bg),#020617);color:var(--text);line-height:1.75;min-height:100vh}.wrap{width:min(var(--max),calc(100% - 36px));margin:auto;padding:40px 0 76px}.brand{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:900;margin-bottom:36px}.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center}.card{background:var(--panel);border:1px solid var(--border);border-radius:30px;padding:36px;box-shadow:0 24px 80px rgba(0,0,0,.34)}.eyebrow{display:inline-flex;margin-bottom:18px;color:#bfdbfe;background:rgba(59,130,246,.11);border:1px solid rgba(96,165,250,.3);border-radius:999px;padding:8px 12px;font-weight:850}h1{font-size:clamp(2.35rem,5vw,4.3rem);letter-spacing:-.065em;line-height:1;margin-bottom:18px}h2{font-size:1.35rem;margin:30px 0 10px}p,li{color:var(--muted)}ul{padding-left:22px;display:grid;gap:8px;margin-top:10px}.quote{margin:26px 0;padding:22px;border-left:4px solid var(--cyan);background:rgba(34,211,238,.08);border-radius:18px;color:#dbeafe;font-weight:750}.note{margin-top:24px;padding:18px;border-radius:20px;border:1px solid rgba(251,191,36,.25);background:rgba(251,191,36,.07);color:#fde68a}.btn{display:inline-flex;margin-top:16px;padding:12px 16px;border-radius:999px;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;text-decoration:none;font-weight:850}.links{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px}.links a{color:#bfdbfe;text-decoration:none;font-weight:850}@media(max-width:640px){.card{padding:24px}h1{font-size:2.45rem}}
+    :root{--ink:#0F2A6A;--white:#FFFFFF;--line:rgba(255,255,255,.12);--line-2:rgba(255,255,255,.22);--max:940px;--disp:'Bodoni Moda',Georgia,serif;--subdisp:'Cormorant',Georgia,serif;--body:'Jost',sans-serif}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--body);background:var(--ink);color:rgba(255,255,255,.72);line-height:1.7;min-height:100vh;font-weight:300;overflow-x:hidden}
+    body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:180px 180px}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(var(--max),calc(100% - 36px));margin:auto;padding:48px 0 80px;position:relative;z-index:1}
+    .brand{display:inline-flex;align-items:center;gap:12px;margin-bottom:40px}
+    .brand-name{font-family:var(--disp);font-weight:400;font-size:1.3rem;color:var(--white)}
+    .logo-mark{width:40px;height:40px;border-radius:10px;background:var(--white);color:var(--ink);display:grid;place-items:center;font-family:var(--body);font-weight:600;font-size:.9rem}
+    .card{background:rgba(255,255,255,.05);border:1px solid var(--line);padding:clamp(2rem,4vw,3rem);box-shadow:0 28px 80px rgba(0,0,0,.25)}
+    .eyebrow{font-family:var(--body);font-size:10px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.35);display:block;margin-bottom:1.2rem}
+    h1{font-family:var(--disp);font-size:clamp(2.2rem,5vw,4rem);font-weight:400;line-height:1.04;letter-spacing:-.02em;color:var(--white);margin-bottom:1.2rem}
+    h2{font-family:var(--disp);font-size:1.4rem;font-weight:400;color:var(--white);margin:2rem 0 .7rem}
+    p,li{color:rgba(255,255,255,.5);font-size:.96rem;line-height:1.75}
+    ul{padding-left:20px;display:grid;gap:8px;margin-top:.6rem}
+    .quote{margin:1.8rem 0;padding:1.4rem 1.6rem;border-left:2px solid rgba(255,255,255,.3);background:rgba(255,255,255,.04)}
+    .quote p{font-family:var(--subdisp);font-style:italic;font-size:1.15rem;color:rgba(255,255,255,.65);line-height:1.55}
+    .note{margin-top:1.6rem;padding:1.2rem 1.4rem;border:1px solid var(--line);background:rgba(255,255,255,.04);color:rgba(255,255,255,.4);font-size:.88rem}
+    .note strong{color:var(--white)}
+    .btn-primary{display:inline-flex;margin-top:1.6rem;background:var(--white);color:var(--ink);font-family:var(--body);font-size:.78rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;padding:.85rem 1.8rem;border-radius:4px;transition:background .25s,transform .2s}
+    .btn-primary:hover{background:#EEF3FF;transform:translateY(-2px)}
+    .links{display:flex;gap:18px;flex-wrap:wrap;margin-top:1.6rem}
+    .links a{color:rgba(255,255,255,.4);font-family:var(--body);font-size:.78rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.15);padding-bottom:2px;transition:color .2s,border-color .2s}
+    .links a:hover{color:var(--white);border-color:var(--white)}
+    @media(max-width:640px){.card{padding:1.6rem}}
   </style>
 </head>
 <body>
   <main class="wrap">
-    <a class="brand" href="/"><span class="logo">CG</span><span>CapGen</span></a>
+    <a class="brand" href="/"><span class="logo-mark">CG</span><span class="brand-name">CapGen</span></a>
     <article class="card">
       <span class="eyebrow">Founder-led government contracting intelligence</span>
       <h1>Why CapGen was built</h1>
       <p>CapGen was created by Jeffrey Mitchell and Apropos Group LLC to help small businesses take a more focused approach to government contracting. The idea started from a simple problem: many businesses can perform valuable work, but they do not always know which opportunities fit what they actually do.</p>
 
-      <div class="quote">CapGen turns a business capability profile into a government contract opportunity pipeline.</div>
+      <div class="quote"><p>CapGen turns a business capability profile into a government contract opportunity pipeline.</p></div>
 
       <h2>The problem</h2>
       <p>Small business owners often begin with a Capability Statement, then get stuck trying to search government opportunity sites manually. They may not know which NAICS codes matter, which set-asides apply, whether the deadline is realistic, or whether the work is actually a fit.</p>
@@ -39,7 +67,7 @@
 
       <div class="note"><strong>Important:</strong> CapGen is not a government agency and does not guarantee contract awards, eligibility, certification approval, or bid success. CapGen helps identify opportunities that may match business information provided.</div>
 
-      <a class="btn" href="/#early-access">Request Early Access</a>
+      <a class="btn-primary" href="/#early-access">Request Early Access</a>
       <div class="links"><a href="/guides/">Read the guides</a><a href="/about-capgen.html">About CapGen</a><a href="/contact.html">Contact</a></div>
     </article>
   </main>

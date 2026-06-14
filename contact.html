@@ -5,20 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact CapGen | Early Access and Match Preview</title>
   <meta name="description" content="Contact CapGen by Apropos Group LLC about early access, government contract opportunity matching, and small business pursuit planning." />
+  <meta name="theme-color" content="#0F2A6A" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;1,6..96,400;1,6..96,500&family=Cormorant:ital,wght@0,500;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#050b16;--panel:rgba(15,30,52,.92);--text:#f8fafc;--muted:#a9bbd4;--blue:#3b82f6;--cyan:#22d3ee;--border:rgba(148,163,184,.22);--max:980px}*{box-sizing:border-box;margin:0;padding:0}body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:radial-gradient(circle at 14% 8%,rgba(59,130,246,.25),transparent 32%),linear-gradient(180deg,var(--bg),#020617);color:var(--text);line-height:1.75;min-height:100vh}.wrap{width:min(var(--max),calc(100% - 36px));margin:auto;padding:40px 0 76px}.brand{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:900;margin-bottom:36px}.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center}.grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:24px;align-items:start}.card,.formbox{background:var(--panel);border:1px solid var(--border);border-radius:30px;padding:30px;box-shadow:0 24px 80px rgba(0,0,0,.34)}h1{font-size:clamp(2.35rem,5vw,4.3rem);letter-spacing:-.065em;line-height:1;margin-bottom:18px}h2{font-size:1.35rem;margin:26px 0 10px}p,li{color:var(--muted)}ul{padding-left:22px;display:grid;gap:8px;margin-top:10px}form{display:grid;gap:14px}label{display:grid;gap:7px;color:#dbeafe;font-weight:800;font-size:.9rem}input,select,textarea{width:100%;border:1px solid var(--border);background:rgba(2,6,23,.62);color:var(--text);border-radius:14px;padding:13px 14px;font:inherit;outline:none}textarea{min-height:130px;resize:vertical}.btn{border:0;display:inline-flex;justify-content:center;padding:13px 18px;border-radius:999px;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;text-decoration:none;font-weight:850;cursor:pointer}.links{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px}.links a{color:#bfdbfe;text-decoration:none;font-weight:850}.note{margin-top:18px;color:var(--muted);font-size:.9rem}@media(max-width:760px){.grid{grid-template-columns:1fr}.card,.formbox{padding:24px}}
+    :root{--ink:#0F2A6A;--white:#FFFFFF;--line:rgba(255,255,255,.12);--max:980px;--disp:'Bodoni Moda',Georgia,serif;--body:'Jost',sans-serif}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--body);background:var(--ink);color:rgba(255,255,255,.72);line-height:1.7;min-height:100vh;font-weight:300;overflow-x:hidden}
+    body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:180px 180px}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(var(--max),calc(100% - 36px));margin:auto;padding:48px 0 80px;position:relative;z-index:1}
+    .brand{display:inline-flex;align-items:center;gap:12px;margin-bottom:40px}
+    .brand-name{font-family:var(--disp);font-weight:400;font-size:1.3rem;color:var(--white)}
+    .logo-mark{width:40px;height:40px;border-radius:10px;background:var(--white);color:var(--ink);display:grid;place-items:center;font-family:var(--body);font-weight:600;font-size:.9rem}
+    .grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:20px;align-items:start}
+    .card,.formbox{background:rgba(255,255,255,.05);border:1px solid var(--line);padding:clamp(1.6rem,3vw,2.4rem);box-shadow:0 24px 70px rgba(0,0,0,.22)}
+    h1{font-family:var(--disp);font-size:clamp(2rem,4.5vw,3.5rem);font-weight:400;line-height:1.05;letter-spacing:-.02em;color:var(--white);margin-bottom:1rem}
+    h2{font-family:var(--disp);font-size:1.3rem;font-weight:400;color:var(--white);margin:1.6rem 0 .6rem}
+    h2:first-child{margin-top:0}
+    p,li{color:rgba(255,255,255,.5);font-size:.94rem;line-height:1.75}
+    .btn-primary{display:inline-flex;margin-top:1.2rem;background:var(--white);color:var(--ink);font-family:var(--body);font-size:.78rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;padding:.85rem 1.8rem;border-radius:4px;transition:background .25s,transform .2s;border:none;cursor:pointer}
+    .btn-primary:hover{background:#EEF3FF;transform:translateY(-2px)}
+    .links{display:flex;gap:14px;flex-wrap:wrap;margin-top:1.4rem}
+    .links a{color:rgba(255,255,255,.35);font-size:.78rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:2px;transition:color .2s}
+    .links a:hover{color:var(--white)}
+    form{display:grid;gap:12px}
+    label{display:grid;gap:5px;font-size:.65rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.38)}
+    input,select,textarea{width:100%;background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:4px;padding:.75rem 1rem;color:var(--white);font-family:var(--body);font-size:.9rem;font-weight:300;outline:none;transition:border-color .2s}
+    input:focus,select:focus,textarea:focus{border-color:rgba(255,255,255,.35)}
+    input::placeholder,textarea::placeholder{color:rgba(255,255,255,.22)}
+    select option{background:#163472}
+    textarea{min-height:130px;resize:vertical}
+    .note{margin-top:12px;color:rgba(255,255,255,.28);font-size:.82rem}
+    @media(max-width:760px){.grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
   <main class="wrap">
-    <a class="brand" href="/"><span class="logo">CG</span><span>CapGen</span></a>
+    <a class="brand" href="/"><span class="logo-mark">CG</span><span class="brand-name">CapGen</span></a>
     <div class="grid">
       <section class="card">
         <h1>Contact CapGen</h1>
         <p>Use this page to contact Apropos Group LLC about CapGen early access, match preview interest, or general questions about the public marketing site.</p>
         <h2>Best next step</h2>
         <p>If you want to be considered for the CapGen early tester group, the fastest path is still the early access form on the homepage.</p>
-        <a class="btn" href="/#early-access">Request Early Access</a>
+        <a class="btn-primary" href="/#early-access">Request Early Access</a>
         <h2>Helpful links</h2>
         <div class="links"><a href="/founder-story.html">Founder Story</a><a href="/about-capgen.html">About CapGen</a><a href="/guides/">Guides</a><a href="/privacy.html">Privacy Notice</a></div>
       </section>
@@ -32,7 +64,7 @@
           <label>Business name<input type="text" name="business_name" /></label>
           <label>Reason for contact<select name="reason" required><option value="">Select one</option><option>Early access question</option><option>Match preview interest</option><option>Partnership inquiry</option><option>Website issue</option><option>Other</option></select></label>
           <label>Message<textarea name="message" required></textarea></label>
-          <button class="btn" type="submit">Send Message</button>
+          <button class="btn-primary" type="submit">Send Message</button>
           <p class="note">Submitting this form does not create a contract, guarantee eligibility, or guarantee government contract results.</p>
         </form>
       </section>

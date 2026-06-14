@@ -5,27 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thank You | CapGen Early Access</title>
   <meta name="description" content="Thank you for requesting CapGen early access." />
+  <meta name="theme-color" content="#0F2A6A" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;1,6..96,400;1,6..96,500&family=Cormorant:ital,wght@0,500;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#050b16;--panel:rgba(15,30,52,.92);--text:#f8fafc;--muted:#a9bbd4;--blue:#3b82f6;--cyan:#22d3ee;--border:rgba(148,163,184,.22);--shadow:0 24px 80px rgba(0,0,0,.35)}
+    :root{--ink:#0F2A6A;--white:#FFFFFF;--line:rgba(255,255,255,.12);--disp:'Bodoni Moda',Georgia,serif;--body:'Jost',sans-serif}
     *{box-sizing:border-box;margin:0;padding:0}
-    body{min-height:100vh;display:grid;place-items:center;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--text);background:radial-gradient(circle at 20% 18%,rgba(59,130,246,.3),transparent 32%),radial-gradient(circle at 80% 85%,rgba(34,211,238,.12),transparent 30%),linear-gradient(180deg,var(--bg),#020617);padding:24px;line-height:1.6}
-    .card{width:min(760px,100%);border:1px solid var(--border);background:var(--panel);border-radius:30px;padding:46px;box-shadow:var(--shadow);text-align:center}
-    .logo{width:54px;height:54px;border-radius:18px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;margin:0 auto 20px;font-weight:950}
-    h1{font-size:clamp(2.2rem,6vw,4.2rem);letter-spacing:-.065em;line-height:1;margin-bottom:16px}
-    p{color:var(--muted);font-size:1.08rem;margin:0 auto 28px;max-width:560px}
-    .actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
-    a{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:999px;color:#fff;background:linear-gradient(135deg,var(--blue),var(--cyan));text-decoration:none;font-weight:850}
-    a.secondary{background:rgba(255,255,255,.06);border:1px solid var(--border)}
+    body{min-height:100vh;display:grid;place-items:center;font-family:var(--body);background:var(--ink);color:rgba(255,255,255,.72);padding:24px;line-height:1.7;font-weight:300;overflow-x:hidden}
+    body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:180px 180px}
+    a{color:inherit;text-decoration:none}
+    .card{width:min(720px,100%);background:rgba(255,255,255,.05);border:1px solid var(--line);padding:clamp(2.4rem,5vw,3.6rem);box-shadow:0 28px 80px rgba(0,0,0,.28);text-align:center;position:relative;z-index:1}
+    .logo-mark{width:52px;height:52px;border-radius:12px;background:var(--white);color:var(--ink);display:grid;place-items:center;margin:0 auto 1.4rem;font-family:var(--body);font-weight:600}
+    h1{font-family:var(--disp);font-size:clamp(2.2rem,6vw,4rem);font-weight:400;line-height:1.04;letter-spacing:-.02em;color:var(--white);margin-bottom:1rem}
+    p{color:rgba(255,255,255,.5);font-size:1rem;margin:0 auto 2rem;max-width:520px}
+    .actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+    .btn-primary{display:inline-flex;align-items:center;justify-content:center;background:var(--white);color:var(--ink);font-family:var(--body);font-size:.78rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;padding:.85rem 1.8rem;border-radius:4px;transition:background .25s,transform .2s}
+    .btn-primary:hover{background:#EEF3FF;transform:translateY(-2px)}
+    .btn-ghost{display:inline-flex;align-items:center;justify-content:center;background:transparent;color:rgba(255,255,255,.4);font-family:var(--body);font-size:.75rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.18);padding-bottom:2px;transition:color .2s,border-color .2s}
+    .btn-ghost:hover{color:var(--white);border-color:var(--white)}
+    @media(max-width:480px){.actions{flex-direction:column;align-items:center}}
   </style>
 </head>
 <body>
   <main class="card">
-    <div class="logo">CG</div>
+    <div class="logo-mark">CG</div>
     <h1>Thank you.</h1>
     <p>Your CapGen early access request has been received. We will review your information and follow up about the next available match preview opportunity.</p>
     <div class="actions">
-      <a href="/">Return to CapGen</a>
-      <a class="secondary" href="/privacy.html">Privacy Notice</a>
+      <a class="btn-primary" href="/">Return to CapGen</a>
+      <a class="btn-ghost" href="/privacy.html">Privacy Notice</a>
     </div>
   </main>
 </body>

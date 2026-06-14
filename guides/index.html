@@ -5,14 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Government Contracting Guides | CapGen</title>
   <meta name="description" content="CapGen guides for small businesses learning how to find government contracts, understand NAICS codes, prepare capability statements, and evaluate opportunities." />
+  <meta name="theme-color" content="#0F2A6A" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;1,6..96,400;1,6..96,500&family=Cormorant:ital,wght@0,500;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#050b16;--panel:rgba(15,30,52,.92);--text:#f8fafc;--muted:#a9bbd4;--blue:#3b82f6;--cyan:#22d3ee;--border:rgba(148,163,184,.22);--max:1060px}*{box-sizing:border-box;margin:0;padding:0}body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:radial-gradient(circle at 12% 8%,rgba(59,130,246,.25),transparent 32%),linear-gradient(180deg,var(--bg),#020617);color:var(--text);line-height:1.7;min-height:100vh}.wrap{width:min(var(--max),calc(100% - 36px));margin:auto;padding:42px 0 70px}.brand{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:900;margin-bottom:24px}.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center}.top-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:38px}.home-btn,.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:999px;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;text-decoration:none;font-weight:850}.home-btn.secondary{background:rgba(255,255,255,.06);border:1px solid var(--border)}h1{font-size:clamp(2.3rem,5vw,4.6rem);letter-spacing:-.065em;line-height:1;margin-bottom:16px}.lead{color:var(--muted);font-size:1.12rem;max-width:760px;margin-bottom:30px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:var(--panel);border:1px solid var(--border);border-radius:24px;padding:24px;text-decoration:none;color:inherit;box-shadow:0 20px 70px rgba(0,0,0,.26)}.card:hover{border-color:rgba(96,165,250,.55)}.card span{display:inline-flex;margin-bottom:12px;color:#bfdbfe;font-weight:900}.card h2{font-size:1.25rem;margin-bottom:8px}.card p{color:var(--muted)}.cta{margin-top:28px;background:rgba(59,130,246,.11);border:1px solid rgba(96,165,250,.28);border-radius:24px;padding:24px}@media(max-width:760px){.grid{grid-template-columns:1fr}h1{font-size:2.55rem}.home-btn,.btn{width:100%}}
+    :root{--ink:#0F2A6A;--white:#FFFFFF;--line:rgba(255,255,255,.12);--max:1060px;--disp:'Bodoni Moda',Georgia,serif;--body:'Jost',sans-serif}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--body);background:var(--ink);color:rgba(255,255,255,.72);line-height:1.7;min-height:100vh;font-weight:300;overflow-x:hidden}
+    body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:180px 180px}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(var(--max),calc(100% - 36px));margin:auto;padding:48px 0 80px;position:relative;z-index:1}
+    .brand{display:inline-flex;align-items:center;gap:12px;margin-bottom:1.4rem}
+    .brand-name{font-family:var(--disp);font-weight:400;font-size:1.3rem;color:var(--white)}
+    .logo-mark{width:40px;height:40px;border-radius:10px;background:var(--white);color:var(--ink);display:grid;place-items:center;font-family:var(--body);font-weight:600;font-size:.9rem}
+    .top-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:2.4rem}
+    .btn-primary{display:inline-flex;align-items:center;justify-content:center;background:var(--white);color:var(--ink);font-family:var(--body);font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:.8rem 1.6rem;border-radius:4px;transition:background .25s,transform .2s}
+    .btn-primary:hover{background:#EEF3FF;transform:translateY(-2px)}
+    .btn-ghost{display:inline-flex;align-items:center;justify-content:center;background:transparent;color:rgba(255,255,255,.4);font-family:var(--body);font-size:.75rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.18);padding-bottom:2px;transition:color .2s,border-color .2s}
+    .btn-ghost:hover{color:var(--white);border-color:var(--white)}
+    h1{font-family:var(--disp);font-size:clamp(2.2rem,5vw,4.2rem);font-weight:400;line-height:1.04;letter-spacing:-.02em;color:var(--white);margin-bottom:1rem}
+    .lead{color:rgba(255,255,255,.5);font-size:1.04rem;max-width:720px;margin-bottom:2rem}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .card{background:rgba(255,255,255,.05);border:1px solid var(--line);padding:1.6rem;display:block;transition:border-color .2s;position:relative;overflow:hidden}
+    .card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--white);transform:scaleX(0);transform-origin:left;transition:transform .4s ease}
+    .card:hover{border-color:rgba(255,255,255,.25)}
+    .card:hover::before{transform:scaleX(1)}
+    .card span{display:block;font-family:var(--body);font-size:9px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.8rem}
+    .card h2{font-family:var(--disp);font-size:1.2rem;font-weight:400;color:var(--white);margin-bottom:.5rem}
+    .card p{color:rgba(255,255,255,.45);font-size:.88rem}
+    .cta{margin-top:2rem;padding:1.6rem 2rem;border:1px solid var(--line);background:rgba(255,255,255,.04)}
+    .cta h2{font-family:var(--disp);font-size:1.6rem;font-weight:400;color:var(--white);margin-bottom:.5rem}
+    .cta p{color:rgba(255,255,255,.5);font-size:.94rem;margin-bottom:1rem}
+    @media(max-width:760px){.grid{grid-template-columns:1fr}h1{font-size:2.4rem}}
   </style>
 </head>
 <body>
   <main class="wrap">
-    <a class="brand" href="/"><span class="logo">CG</span><span>CapGen</span></a>
-    <div class="top-actions"><a class="home-btn" href="/">Return To Home</a><a class="home-btn secondary" href="/#early-access">Request Early Access</a></div>
+    <a class="brand" href="/"><span class="logo-mark">CG</span><span class="brand-name">CapGen</span></a>
+    <div class="top-actions">
+      <a class="btn-primary" href="/">Return To Home</a>
+      <a class="btn-ghost" href="/#early-access">Request Early Access</a>
+    </div>
     <h1>Government contracting guides for small businesses.</h1>
     <p class="lead">Use these CapGen guides to understand the starting points that matter: government contract searches, NAICS codes, capability statements, SDVOSB opportunity review, and contract matching tools.</p>
     <section class="grid" aria-label="CapGen guide pages">
@@ -22,7 +56,11 @@
       <a class="card" href="/guides/sdvosb-government-contracts.html"><span>Guide 04</span><h2>SDVOSB government contracts</h2><p>Learn how service-disabled veteran-owned businesses can think about opportunity fit.</p></a>
       <a class="card" href="/guides/government-contract-matching-tool.html"><span>Guide 05</span><h2>Government contract matching tool for small businesses</h2><p>See why matching should start with business capability, not random keyword searching.</p></a>
     </section>
-    <section class="cta"><h2>Want a more focused starting point?</h2><p>CapGen helps turn your business capability profile into a government contract opportunity pipeline.</p><a class="btn" href="/#early-access">Request Early Access</a></section>
+    <section class="cta">
+      <h2>Want a more focused starting point?</h2>
+      <p>CapGen helps turn your business capability profile into a government contract opportunity pipeline.</p>
+      <a class="btn-primary" href="/#early-access">Request Early Access</a>
+    </section>
   </main>
 </body>
 </html>
