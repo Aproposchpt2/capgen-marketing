@@ -1,0 +1,14 @@
+[build]
+  publish = "."
+  command = ""
+
+# Keep the static thank-you page available after form submission.
+[[redirects]]
+  from = "/thank-you"
+  to = "/thank-you.html"
+  status = 200
+
+# Single-page fallback is intentionally NOT enabled because this is a static HTML landing page.
+# Root files should publish directly from the repository root:
+# /index.html
+# /thank-you.html
