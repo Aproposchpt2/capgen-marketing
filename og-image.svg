@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0F2A6A"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#noise)" opacity="0.03"/>
+  <rect x="60" y="60" width="1080" height="510" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <rect x="60" y="60" width="4" height="510" fill="white" opacity="0.6"/>
+  <text x="120" y="200" font-family="Georgia, serif" font-size="72" font-weight="400" fill="white" letter-spacing="-2">CapGen</text>
+  <text x="120" y="290" font-family="Arial, sans-serif" font-size="28" font-weight="300" fill="rgba(255,255,255,0.55)" letter-spacing="1">Government Contract Intelligence</text>
+  <text x="120" y="360" font-family="Arial, sans-serif" font-size="22" font-weight="300" fill="rgba(255,255,255,0.4)" letter-spacing="0.5">Turn your capability profile into a</text>
+  <text x="120" y="395" font-family="Arial, sans-serif" font-size="22" font-weight="300" fill="rgba(255,255,255,0.4)" letter-spacing="0.5">government contract opportunity pipeline.</text>
+  <rect x="120" y="460" width="200" height="48" fill="white" rx="2"/>
+  <text x="220" y="490" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A6A" text-anchor="middle" letter-spacing="2">GET EARLY ACCESS</text>
+  <text x="1140" y="560" font-family="Arial, sans-serif" font-size="14" fill="rgba(255,255,255,0.25)" text-anchor="end" letter-spacing="1">APROPOS GROUP LLC</text>
+</svg>
