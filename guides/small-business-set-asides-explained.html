@@ -57,14 +57,58 @@
     .related-links a:hover{color:var(--white);border-color:var(--white)}
     @media(max-width:640px){article{padding:1.6rem}}
   </style>
+  <style id="cg-chrome">
+  /* ---- shared nav ---- */
+  .cg-topbar{position:sticky;top:0;z-index:100;backdrop-filter:blur(24px);
+    -webkit-backdrop-filter:blur(24px);background:rgba(15,42,106,.94);
+    border-bottom:1px solid rgba(255,255,255,.12)}
+  .cg-nav{max-width:1180px;margin:0 auto;min-height:70px;display:flex;align-items:center;
+    justify-content:space-between;gap:20px;padding:.85rem clamp(1rem,4vw,2.75rem)}
+  .cg-brand{display:flex;align-items:center;gap:12px;font-family:'Bodoni Moda',Georgia,serif;
+    font-weight:400;font-size:1.32rem;color:#fff;letter-spacing:-.01em;text-decoration:none}
+  .cg-logo{width:40px;height:40px;display:grid;place-items:center;border-radius:10px;
+    font-family:'Jost',sans-serif;font-weight:600;font-size:.9rem;background:#fff;color:#0F2A6A}
+  .cg-links{display:flex;align-items:center;gap:22px;font-family:'Jost',sans-serif;
+    font-size:.86rem;font-weight:400;color:rgba(255,255,255,.45)}
+  .cg-links a{color:inherit;text-decoration:none;transition:color .2s}
+  .cg-links a:hover{color:#fff}
+  .cg-cta{background:#fff;color:#0F2A6A!important;font-family:'Jost',sans-serif;font-weight:600;
+    font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;padding:.85rem 1.8rem;
+    border-radius:4px;transition:background .25s,transform .2s;display:inline-flex;align-items:center}
+  .cg-cta:hover{background:#EEF3FF;transform:translateY(-2px)}
+  /* On small screens, collapse the text links but KEEP the CTA reachable. */
+  @media(max-width:920px){ .cg-links a:not(.cg-cta){display:none} }
+
+  /* ---- shared footer ---- */
+  .cg-footer{border-top:1px solid rgba(255,255,255,.07);padding:2rem 0;background:#0F2A6A;
+    position:relative;z-index:1}
+  .cg-footer-row{max-width:1180px;margin:0 auto;padding:0 clamp(1rem,4vw,2.75rem);
+    display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  .cg-footer-row,.cg-footer-row div{font-family:'Jost',sans-serif;font-size:.72rem;font-weight:400;
+    letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.2)}
+  .cg-footer-links{display:flex;gap:18px;flex-wrap:wrap}
+  .cg-footer-links a{color:rgba(255,255,255,.3);text-decoration:none;transition:color .2s}
+  .cg-footer-links a:hover{color:#fff}
+  .cg-footer-row span{color:rgba(255,255,255,.4)}
+</style>
 </head>
 <body>
-  <main class="wrap">
-    <a class="brand" href="/"><span class="logo-mark">CG</span><span class="brand-name">CapGen</span></a>
-    <div class="top-actions">
-      <a class="btn-primary" href="/">Return To Home</a>
-      <a class="btn-ghost" href="/guides/">All Guides</a>
+<header class="cg-topbar">
+  <nav class="cg-nav" aria-label="Main navigation">
+    <a href="/" class="cg-brand" aria-label="CapGen home"><span class="cg-logo">CG</span><span>CapGen</span></a>
+    <div class="cg-links">
+      <a href="/#how">How It Works</a>
+      <a href="/#who">Who It Helps</a>
+      <a href="/videos.html">Videos</a>
+      <a href="/guides/">Guides</a>
+      <a href="/about-capgen.html">About</a>
+      <a href="/founder-story.html">Story</a>
+      <a href="/#faq">FAQ</a>
+      <a class="cg-cta" href="https://capgen.aproposgroupllc.com/beta">Access CapGen &rarr;</a>
     </div>
+  </nav>
+</header>
+  <main class="wrap">
     <article>
       <h1>Small business set-asides explained</h1>
       <p>A set-aside is a federal contracting mechanism that restricts competition for a specific contract to a defined category of businesses. When a contracting officer designates an opportunity as a set-aside, only businesses that meet the designated criteria can submit a proposal or receive the award.</p>
@@ -108,7 +152,7 @@
         <h2>See which set-aside opportunities match your profile.</h2>
         <p>CapGen filters live federal contracts against your registered certifications and NAICS codes — so you only see opportunities you are actually eligible to pursue.</p>
         <div class="cta-actions">
-          <a class="btn-primary" href="https://capgen.aproposgroupllc.com/beta">Try CapGen Free</a>
+          <a class="btn-primary" href="https://capgen.aproposgroupllc.com/beta">Access CapGen &rarr;</a>
           <a class="btn-ghost" href="/">Return To Home</a>
         </div>
       </div>
@@ -125,5 +169,19 @@
       </div>
     </article>
   </main>
+<footer class="cg-footer">
+  <div class="cg-footer-row">
+    <div>&copy; <span id="cg-year"></span> CapGen by <span>Apropos Group LLC</span>. All rights reserved.</div>
+    <div class="cg-footer-links">
+      <a href="/videos.html">Videos</a>
+      <a href="/guides/">Guides</a>
+      <a href="/about-capgen.html">About</a>
+      <a href="/founder-story.html">Founder Story</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('cg-year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
