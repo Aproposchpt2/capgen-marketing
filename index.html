@@ -121,6 +121,24 @@
       padding:3px 8px;white-space:nowrap;color:rgba(255,255,255,.55)}
     .opp p{color:rgba(255,255,255,.38);font-size:.8rem;font-family:var(--body)}
 
+    /* TABLE OF CONTENTS */
+    .toc{padding:clamp(2.4rem,5vh,3.6rem) 0;border-top:1px solid var(--line)}
+    .toc-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:1.4rem}
+    .toc-head h2{font-size:clamp(1.5rem,2.6vw,2.2rem);margin:0}
+    .toc-head span{font-family:var(--body);font-size:10px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.35)}
+    .toc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+    .toc-btn{display:flex;align-items:center;gap:12px;padding:18px 20px;border:1px solid var(--line);background:rgba(255,255,255,.05);color:rgba(255,255,255,.72);position:relative;overflow:hidden;transition:background .25s,color .25s,transform .2s}
+    .toc-btn::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--white);transform:scaleX(0);transform-origin:left;transition:transform .4s ease}
+    .toc-btn:hover{background:rgba(255,255,255,.09);color:var(--white);transform:translateY(-2px)}
+    .toc-btn:hover::before{transform:scaleX(1)}
+    .toc-num{font-family:var(--subdisp);font-style:italic;font-size:1.3rem;color:rgba(255,255,255,.3);line-height:1;min-width:24px}
+    .toc-label{font-family:var(--body);font-weight:500;font-size:.95rem;flex:1}
+    .toc-arrow{font-family:var(--body);color:rgba(255,255,255,.4);transition:transform .2s,color .2s}
+    .toc-btn:hover .toc-arrow{transform:translateX(3px);color:var(--white)}
+    .toc-btn.primary{background:var(--white);color:var(--ink);border-color:var(--white)}
+    .toc-btn.primary .toc-num,.toc-btn.primary .toc-arrow{color:rgba(15,42,106,.55)}
+    .toc-btn.primary:hover{background:var(--gold-bright)}
+
     /* SECTIONS */
     section{padding:clamp(4rem,8vh,7rem) 0;border-top:1px solid var(--line);position:relative}
     .hero{border-top:none}
@@ -266,7 +284,7 @@
         <a href="/guides/">Guides</a>
         <a href="/about-capgen.html">About</a>
         <a href="#faq">FAQ</a>
-        <a class="btn-primary" href="https://capgen.aproposgroupllc.com/beta">Access CapGen →</a>
+        <a class="btn-primary" href="https://capgen.aproposgroupllc.com/beta">Join the Beta →</a>
       </div>
     </nav>
   </header>
@@ -293,11 +311,11 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <div class="eyebrow"><span class="pulse"></span> Now available — free access for small businesses</div>
+          <div class="eyebrow"><span class="pulse"></span> Now recruiting beta testers — free access for small businesses</div>
           <h1>Government contracts for small businesses — <em>matched to your capability.</em></h1>
           <p class="hero-copy">CapGen matches live government contract opportunities to your capability profile and NAICS codes — scored, filtered, and organized so you spend time on contracts you can actually win.</p>
           <div class="hero-actions">
-            <a class="btn-primary" href="https://capgen.aproposgroupllc.com/beta">Access CapGen Free →</a>
+            <a class="btn-primary" href="https://capgen.aproposgroupllc.com/beta">Sign Up for the Beta Program →</a>
             <a class="btn-ghost" href="#how">See How It Works</a>
           </div>
           <div class="trust-row">
@@ -326,6 +344,24 @@
             </div>
           </div>
         </aside>
+      </div>
+    </section>
+
+    <!-- TABLE OF CONTENTS / LANDING NAVIGATION -->
+    <section class="toc" id="explore" aria-label="Explore CapGen">
+      <div class="container">
+        <div class="toc-head">
+          <h2>Explore <em>CapGen</em></h2>
+          <span>Jump to a section</span>
+        </div>
+        <div class="toc-grid">
+          <a class="toc-btn" href="#how"><span class="toc-num">01</span><span class="toc-label">How It Works</span><span class="toc-arrow">→</span></a>
+          <a class="toc-btn" href="#who"><span class="toc-num">02</span><span class="toc-label">Who It Helps</span><span class="toc-arrow">→</span></a>
+          <a class="toc-btn" href="#videos"><span class="toc-num">03</span><span class="toc-label">Watch the Videos</span><span class="toc-arrow">→</span></a>
+          <a class="toc-btn" href="#guides"><span class="toc-num">04</span><span class="toc-label">Contracting Guides</span><span class="toc-arrow">→</span></a>
+          <a class="toc-btn" href="#faq"><span class="toc-num">05</span><span class="toc-label">FAQ</span><span class="toc-arrow">→</span></a>
+          <a class="toc-btn primary" href="https://capgen.aproposgroupllc.com/beta"><span class="toc-num">★</span><span class="toc-label">Become a Beta Tester</span><span class="toc-arrow">→</span></a>
+        </div>
       </div>
     </section>
 
@@ -471,10 +507,10 @@
       <div class="container">
         <div class="cta-band">
           <div>
-            <h2>Ready to work your pipeline?</h2>
-            <p>Free access. No software to install. Your matched opportunities are waiting.</p>
+            <h2>Become a CapGen beta tester.</h2>
+            <p>Free access during the beta. No software to install. Help shape the platform while you work your pipeline.</p>
           </div>
-          <a class="btn-primary" href="https://capgen.aproposgroupllc.com/beta">Access CapGen Free →</a>
+          <a class="btn-primary" href="https://capgen.aproposgroupllc.com/beta">Sign Up for the Beta Program →</a>
         </div>
       </div>
     </section>
