@@ -161,7 +161,7 @@
     .video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:2rem}
     .video-card{background:rgba(255,255,255,.05);border:1px solid var(--line);overflow:hidden}
     .video-frame{position:relative;width:100%;aspect-ratio:16/9;background:rgba(255,255,255,.04)}
-    .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .video-frame iframe,.video-frame video{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover;background:#000}
     .video-card-body{padding:14px 16px}
     .video-tag{font-family:var(--body);font-size:9px;font-weight:500;letter-spacing:.18em;
       text-transform:uppercase;color:rgba(255,255,255,.3);display:block;margin-bottom:.5rem}
@@ -388,15 +388,15 @@
         </div>
         <div class="video-grid">
           <div class="video-card">
-            <div class="video-frame"><iframe src="https://drive.google.com/file/d/1miDeb254e0dJSx5qdVb_QTdpP0KH8yR8/preview" allowfullscreen title="Let the Contracts Find You"></iframe></div>
+            <div class="video-frame"><video controls preload="metadata" playsinline title="CapGen Let the Contracts Find You"><source src="/assets/videos/let-the-contracts-find-you.mp4#t=0.1" type="video/mp4">Your browser does not support embedded video.</video></div>
             <div class="video-card-body"><span class="video-tag">Awareness</span><h3>Let the Contracts Find You</h3></div>
           </div>
           <div class="video-card">
-            <div class="video-frame"><iframe src="https://drive.google.com/file/d/1AW8RjCX-W7JfEPmc_w_ZOx2fv6CJ6ZV9/preview" allowfullscreen title="Stop Searching, Start Winning"></iframe></div>
+            <div class="video-frame"><video controls preload="metadata" playsinline title="CapGen Stop Searching, Start Winning"><source src="/assets/videos/stop-searching-start-winning.mp4#t=0.1" type="video/mp4">Your browser does not support embedded video.</video></div>
             <div class="video-card-body"><span class="video-tag">Awareness</span><h3>Stop Searching, Start Winning</h3></div>
           </div>
           <div class="video-card">
-            <div class="video-frame"><iframe src="https://drive.google.com/file/d/1smVmu3Sou7juXskF5rnFzYEMKiYMOqwm/preview" allowfullscreen title="Work Smarter, Win Faster"></iframe></div>
+            <div class="video-frame"><video controls preload="metadata" playsinline title="CapGen Work Smarter, Win Faster"><source src="/assets/videos/work-smarter-win-faster.mp4#t=0.1" type="video/mp4">Your browser does not support embedded video.</video></div>
             <div class="video-card-body"><span class="video-tag">Productivity</span><h3>Work Smarter, Win Faster</h3></div>
           </div>
         </div>
