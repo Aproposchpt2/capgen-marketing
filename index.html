@@ -237,6 +237,17 @@
       justify-content:space-between;gap:28px;flex-wrap:wrap}
     .cta-band h2{font-size:clamp(1.8rem,3vw,2.8rem);margin-bottom:.5rem}
     .cta-band p{color:rgba(255,255,255,.45);font-size:.96rem}
+    .beta-band{flex-direction:column;align-items:stretch;gap:1.8rem}
+    .beta-intro{max-width:760px}
+    .beta-intro .eyebrow-sm{margin-bottom:.8rem}
+    .beta-intro h2{margin-bottom:.6rem}
+    .beta-intro p{color:rgba(255,255,255,.5);font-size:1rem;line-height:1.75}
+    .beta-benefits{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .beta-benefit{padding:18px 20px;border:1px solid var(--line);background:rgba(255,255,255,.04)}
+    .beta-benefit strong{display:block;font-family:var(--disp);font-weight:400;font-size:1.05rem;color:var(--white);margin-bottom:.4rem}
+    .beta-benefit span{display:block;color:rgba(255,255,255,.5);font-size:.88rem;line-height:1.65}
+    .beta-band .btn-primary{align-self:flex-start}
+    @media(max-width:680px){.beta-benefits{grid-template-columns:1fr}}
 
     /* DISCLAIMER */
     .disclaimer{border:1px solid var(--line);background:rgba(255,255,255,.04);
@@ -290,7 +301,7 @@
         <a href="/guides/">Guides</a>
         <a href="/about-capgen.html">About</a>
         <a href="#faq">FAQ</a>
-        <a class="btn-primary" href="https://capgen.aproposgroupllc.com/beta">Join the Beta →</a>
+        <a class="btn-primary" href="#beta">Learn About the Beta Program →</a>
       </div>
     </nav>
   </header>
@@ -513,13 +524,20 @@
       </div>
     </section>
 
-    <!-- FINAL CTA -->
-    <section>
+    <!-- FINAL CTA / BETA PROGRAM -->
+    <section id="beta">
       <div class="container">
-        <div class="cta-band">
-          <div>
+        <div class="cta-band beta-band">
+          <div class="beta-intro">
+            <span class="eyebrow-sm">The CapGen Beta Testing Program</span>
             <h2>Become a CapGen beta tester.</h2>
-            <p>Free access during the beta. No software to install. Help shape the platform while you work your pipeline.</p>
+            <p>We're opening the complete platform to a small founding group of business owners — and shaping what CapGen becomes around how they actually use it.</p>
+          </div>
+          <div class="beta-benefits">
+            <div class="beta-benefit"><strong>The whole platform, unlocked</strong><span>Every feature and every tool — no tiers, no limits — for the full length of your run.</span></div>
+            <div class="beta-benefit"><strong>A full month, on us</strong><span>Thirty days of complete access, at no cost and with no obligation to continue.</span></div>
+            <div class="beta-benefit"><strong>Your perspective, built in</strong><span>When your trial wraps, tell us what worked and what you'd sharpen — your feedback steers the roadmap.</span></div>
+            <div class="beta-benefit"><strong>A founding seat, by design</strong><span>This first cohort is intentionally small: only twenty businesses before we close the doors.</span></div>
           </div>
           <a class="btn-primary" href="https://capgen.aproposgroupllc.com/beta">Join the Beta Testing Program →</a>
         </div>
