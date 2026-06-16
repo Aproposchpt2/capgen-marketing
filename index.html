@@ -121,6 +121,12 @@
       padding:3px 8px;white-space:nowrap;color:rgba(255,255,255,.55)}
     .opp p{color:rgba(255,255,255,.38);font-size:.8rem;font-family:var(--body)}
 
+    /* POSITIONING ONE-LINER */
+    .oneliner{padding:clamp(2.6rem,6vh,4.2rem) 0;border-top:1px solid var(--line);text-align:center}
+    .oneliner p{font-family:var(--disp);font-weight:400;font-size:clamp(1.35rem,3vw,2.35rem);
+      line-height:1.32;letter-spacing:-.01em;color:rgba(255,255,255,.62);max-width:900px;margin:0 auto}
+    .oneliner em{font-style:italic;font-family:var(--subdisp);color:var(--white)}
+
     /* TABLE OF CONTENTS */
     .toc{padding:clamp(2.4rem,5vh,3.6rem) 0;border-top:1px solid var(--line)}
     .toc-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:1.4rem}
@@ -344,6 +350,13 @@
             </div>
           </div>
         </aside>
+      </div>
+    </section>
+
+    <!-- POSITIONING ONE-LINER -->
+    <section class="oneliner" aria-label="What makes CapGen different">
+      <div class="container">
+        <p>Other tools show you the federal marketplace. <em>CapGen shows you your place in it.</em></p>
       </div>
     </section>
 
