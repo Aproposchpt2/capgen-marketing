@@ -1,6 +1,6 @@
 [build]
   publish = "."
-  command = ""
+  command = "node scripts/validate-rfcp-wave1-migration.cjs"
 
 # Keep the static thank-you page available after form submission.
 [[redirects]]
@@ -8,7 +8,40 @@
   to = "/thank-you.html"
   status = 200
 
-# Single-page fallback is intentionally NOT enabled because this is a static HTML landing page.
-# Root files should publish directly from the repository root:
-# /index.html
-# /thank-you.html
+# P3-01 Wave 1 federal authority consolidation.
+# These redirects transfer generic federal educational intent to the
+# Registered Federal Contractors Portal after the destination pages were
+# production-verified. CapGen branded/product pages and all Wave 2 guides
+# remain available on this site.
+[[redirects]]
+  from = "/guides/how-to-find-government-contracts.html"
+  to = "https://federalcontractorportal.aproposgroupllc.com/guides/how-to-find-government-contracts/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/naics-code-government-contracts.html"
+  to = "https://federalcontractorportal.aproposgroupllc.com/guides/naics-codes-government-contracts/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/government-contract-matching-tool.html"
+  to = "https://federalcontractorportal.aproposgroupllc.com/federal-contract-opportunity-matching/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/sam-gov-registration-small-business.html"
+  to = "https://federalcontractorportal.aproposgroupllc.com/guides/sam-gov-registration-small-business/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/small-business-set-asides-explained.html"
+  to = "https://federalcontractorportal.aproposgroupllc.com/guides/federal-small-business-set-asides/"
+  status = 301
+  force = true
+
+# Single-page fallback is intentionally NOT enabled because this is a static HTML site.
+# Root and retained CapGen product/brand files publish directly from the repository root.
