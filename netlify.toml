@@ -2,9 +2,124 @@
   publish = "."
   command = ""
 
-# CapGen is retired. Preserve crawl access so search engines and AI systems can
-# observe permanent redirects and consolidate historical signals into the
+# CapGen is retired. Keep the legacy host crawlable and issue permanent redirects
+# so search engines and AI systems can consolidate historical signals into the
 # current APROPOS federal procurement property.
+#
+# Specific legacy resources are mapped first to the closest canonical RFCP page.
+# The final catch-all retires all remaining CapGen URLs to the RFCP homepage.
+
+[[redirects]]
+  from = "/guides/how-to-find-government-contracts.html"
+  to = "https://federalcontractorportal.aproposgroupllc.com/guides/how-to-find-government-contracts/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/naics-code-government-contracts.html"
+  to = "https://federalcontractorportal.aproposgroupllc.com/guides/naics-codes-government-contracts/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/capability-statement-government-contracts.html"
+  to = "https://federalcontractorportal.aproposgroupllc.com/guides/federal-contractor-capability-statement/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/small-business-set-asides-explained.html"
+  to = "https://federalcontractorportal.aproposgroupllc.com/guides/federal-small-business-set-asides/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/sam-gov-registration-small-business.html"
+  to = "https://federalcontractorportal.aproposgroupllc.com/guides/sam-gov-registration-small-business/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/government-contract-matching-tool.html"
+  to = "https://federalcontractorportal.aproposgroupllc.com/federal-contract-opportunity-matching/"
+  status = 301
+  force = true
+
+# Legacy certification and program-specific articles consolidate into the current
+# RFCP small-business set-aside guide until dedicated current pages are warranted.
+[[redirects]]
+  from = "/guides/8a-program-eligibility-guide.html"
+  to = "https://federalcontractorportal.aproposgroupllc.com/guides/federal-small-business-set-asides/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/hubzone-certification-guide.html"
+  to = "https://federalcontractorportal.aproposgroupllc.com/guides/federal-small-business-set-asides/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/sdvosb-government-contracts.html"
+  to = "https://federalcontractorportal.aproposgroupllc.com/guides/federal-small-business-set-asides/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/wosb-government-contracts.html"
+  to = "https://federalcontractorportal.aproposgroupllc.com/guides/federal-small-business-set-asides/"
+  status = 301
+  force = true
+
+# Related legacy educational pages consolidate into the current RFCP guide hub.
+[[redirects]]
+  from = "/guides/government-contract-types-explained.html"
+  to = "https://federalcontractorportal.aproposgroupllc.com/guides/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/how-to-write-government-contract-proposal.html"
+  to = "https://federalcontractorportal.aproposgroupllc.com/guides/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/past-performance-government-contracts.html"
+  to = "https://federalcontractorportal.aproposgroupllc.com/guides/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/sole-source-contracts-small-business.html"
+  to = "https://federalcontractorportal.aproposgroupllc.com/guides/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/teaming-agreements-government-contracts.html"
+  to = "https://federalcontractorportal.aproposgroupllc.com/guides/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/index.html"
+  to = "https://federalcontractorportal.aproposgroupllc.com/guides/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/"
+  to = "https://federalcontractorportal.aproposgroupllc.com/guides/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/founder-story.html"
+  to = "https://aproposgroupllc.com/"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/sitemap.xml"
   to = "https://federalcontractorportal.aproposgroupllc.com/sitemap.xml"
