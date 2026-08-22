@@ -2,13 +2,23 @@
   publish = "."
   command = ""
 
-# Keep the static thank-you page available after form submission.
+# CapGen is retired. Preserve crawl access so search engines and AI systems can
+# observe permanent redirects and consolidate historical signals into the
+# current APROPOS federal procurement property.
 [[redirects]]
-  from = "/thank-you"
-  to = "/thank-you.html"
-  status = 200
+  from = "/sitemap.xml"
+  to = "https://federalcontractorportal.aproposgroupllc.com/sitemap.xml"
+  status = 301
+  force = true
 
-# Single-page fallback is intentionally NOT enabled because this is a static HTML landing page.
-# Root files should publish directly from the repository root:
-# /index.html
-# /thank-you.html
+[[redirects]]
+  from = "/robots.txt"
+  to = "https://federalcontractorportal.aproposgroupllc.com/robots.txt"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "https://federalcontractorportal.aproposgroupllc.com/"
+  status = 301
+  force = true
