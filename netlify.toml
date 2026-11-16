@@ -12,3 +12,117 @@
 # Root files should publish directly from the repository root:
 # /index.html
 # /thank-you.html
+
+[[redirects]]
+  from = "/guides/how-to-find-government-contracts"
+  to = "/guides/how-to-find-government-contracts.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/naics-code-government-contracts"
+  to = "/guides/naics-code-government-contracts.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/capability-statement-government-contracts"
+  to = "/guides/capability-statement-government-contracts.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/sdvosb-government-contracts"
+  to = "/guides/sdvosb-government-contracts.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/government-contract-matching-tool"
+  to = "/guides/government-contract-matching-tool.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/sam-gov-registration-small-business"
+  to = "/guides/sam-gov-registration-small-business.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/small-business-set-asides-explained"
+  to = "/guides/small-business-set-asides-explained.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/how-to-write-government-contract-proposal"
+  to = "/guides/how-to-write-government-contract-proposal.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/8a-program-eligibility-guide"
+  to = "/guides/8a-program-eligibility-guide.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/hubzone-certification-guide"
+  to = "/guides/hubzone-certification-guide.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/wosb-government-contracts"
+  to = "/guides/wosb-government-contracts.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/past-performance-government-contracts"
+  to = "/guides/past-performance-government-contracts.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/teaming-agreements-government-contracts"
+  to = "/guides/teaming-agreements-government-contracts.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/sole-source-contracts-small-business"
+  to = "/guides/sole-source-contracts-small-business.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/government-contract-types-explained"
+  to = "/guides/government-contract-types-explained.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about-capgen"
+  to = "/about-capgen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/founder-story"
+  to = "/founder-story.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/videos"
+  to = "/videos.html"
+  status = 301
+  force = true
