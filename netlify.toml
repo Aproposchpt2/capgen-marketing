@@ -4,6 +4,6 @@
 
 [[redirects]]
   from = "/*"
-  to = "https://boda.stellaruc.com/"
+  to = "https://sbda.stellaruc.com/"
   status = 301
   force = true
